@@ -35,7 +35,6 @@ ul {
   max-height: 756px;
   background-color: #f2f2f2;
   position: relative;
-  display: flex;
   align-items: center;
   overflow: hidden;
 }
@@ -53,8 +52,6 @@ ul {
 .header__title{
   width: 730px;
   position: relative;
-  z-index: 1;
-
   margin: 0;
   z-index: 2;
   line-height: 96px;
