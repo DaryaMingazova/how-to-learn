@@ -3,7 +3,6 @@ ul {
   margin-left: 0;
 }
 
-/*header шапка сайта*/
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -27,6 +26,7 @@ ul {
   margin-bottom: 30px;
 }
 
+/*header шапка сайта*/
 .header {
   display: flex;
 
@@ -78,10 +78,6 @@ ul {
   cursor: pointer;
 }
 
-.header__link:hover {
-  opacity: .5;/*при наведении мышки меняется прозрачность цвета текста*/
-}
-
 .header__illustration {
   width: 765px;
   height: 608px;
@@ -110,6 +106,7 @@ ul {
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
+  margin-top:0;
 }
 
 .two-columns__brief {
@@ -134,8 +131,8 @@ ul {
   font-weight: normal;
 }
 
-.two-columns__paragraph:first-of-type {
-  margin-top: 0;
+.two-columns__paragraph-top {
+  margin-top:0;
 }
 
 .two-columns__span-accent {
@@ -176,7 +173,6 @@ ul {
 
 .table__cell {
   width: 250px;
-
   margin-top: 60px;
 }
 
@@ -203,7 +199,7 @@ ul {
   right: -210px;
 }
 
-.section-title {
+.content-title {
 
   width: 60%;
   margin: 0 auto;
@@ -214,7 +210,7 @@ ul {
   font-weight: 600;
 }
 
-.section-subtitle {
+.content-subtitle {
   width: 60%;
   margin: 20px auto 0;
   text-align: center;
@@ -224,7 +220,7 @@ ul {
   font-weight: normal;
 }
 
-.section-title_theme_dark, .section-subtitle_theme_dark {
+.content_theme_dark {
   color: white;
   position: relative;
   z-index: 1;
@@ -291,10 +287,6 @@ ul {
   cursor: pointer;
 }
 
-.feynman__link::hover {
-  opacity: .5;
-}
-
 /*Подвал сайта*/
 .footer {
   padding-top:60px;
@@ -349,28 +341,15 @@ ul {
   color:#494848;
 }
 
-.footer__social-icons {
+.footer__social-icon {
   width:16px;
   height:16px;
   background-size: contain;
   position: relative;
-
 }
 
-.footer__content-social a:link {
-  color:#fff;
-}
-
-.footer__content-social a:visited {
-  color: #fff;
-}
-
-.footer__column-links a:link {
-  color:#fff;
-}
-
-.footer__column-links a:visited {
-  color: #fff;
+.footer__social-icons {
+  display: block;
 }
 
 .footer__column_content-social {
@@ -398,7 +377,6 @@ ul {
 
 .footer__column-links {
   margin-bottom:10px;
-
   line-height:30px;
   font-size:18px;
   list-style-type:none;
@@ -414,18 +392,4 @@ ul {
   color: white;
   transition: opacity .2s linear;
   cursor: pointer;
-}
-
-.footer__social-icons a:hover {
-  opacity: 0.5;
-  transition:0.5s linear;/*плавная трансформация*/
-}
-
-.footer__column-links a:hover {
-  opacity: 0.5;
-  transition:0.5s linear;
-}
-
-.footer a {
-  display:block;
 }
